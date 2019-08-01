@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/bt_grade_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_grade" />
+
+        <ImageView
+            android:id="@+id/bt_grade_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_grade" />
+
+        <ImageView
+            android:id="@+id/bt_grade_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_grade" />
+
+        <ImageView
+            android:id="@+id/bt_grade_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_grade" />
+
+        <ImageView
+            android:id="@+id/bt_grade_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_grade" />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/meta_avaliar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5,0"
+            android:textSize="40dp"
+            android:textColor="@color/comment_valiar"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/user_cliente">
+
+            <ImageView
+                android:id="@+id/image_avaliar"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textColor="@color/comment_valiar"
+                android:id="@+id/comment_edit"
+                android:backgroundTint="@color/comment_valiar"
+                android:maxLength="200"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/avaliar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="avaliar"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_login"
+            android:text="entre com o facebook"
+            android:background="#395697"
+            android:textColor="#FFF"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

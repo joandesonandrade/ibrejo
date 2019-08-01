@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ibrejo.wayti.com.ibrejo.NewsBrejo">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_bar"/>
+
+    <TextView
+        android:id="@+id/news_erro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="houve um problema :("
+        android:textColor="#e1e4e8"
+        android:textSize="35dp"
+        android:visibility="gone"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_web"
+        android:visibility="gone"
+        android:layout_margin="5dp">
+
+
+    </WebView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ibrejo.wayti.com.ibrejo.SelectCity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:background="@mipmap/loginscreen">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_logoib"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <ScrollView
+                    android:id="@+id/city_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/selected_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_textoselecioneacidade"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/bt_solanea"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_botaosolanea" />
+
+                    <ImageView
+                        android:id="@+id/bt_bananeiras"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_botaobananeiras"
+                        android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/bt_guarabira"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_botaoguarabira"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/fb_profile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/radius_image"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_enter_withFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15dp"
+                        android:text="olá usuário seja bem-vindo"
+                        android:gravity="center"
+                        android:fontFamily="arial"
+                        android:visibility="gone"/>
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/fb_login"
+                        android:layout_width="228dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp" />
+
+                    <ImageView
+                        android:id="@+id/ppppp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_facalogincomfacebook"/>
+
+                </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:id="@+id/city_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="50dp">
+
+                    <Button
+                        android:id="@+id/bt_city_sim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sim"/>
+                    <Button
+                        android:id="@+id/bt_city_nao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="não"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

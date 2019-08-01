@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Informa Brejo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">selecionar cidade</string>
+    <string name="title_activity_actmaph">Informa Brejo</string>
+    <string name="title_activity_act_informations">Informação</string>
+
+    <string name="facebook_app_id">208933249911878</string>
+    <string name="fb_login_protocol_scheme">fb208933249911878</string>
+
+</resources>
